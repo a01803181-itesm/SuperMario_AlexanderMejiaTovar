@@ -1,3 +1,5 @@
+// Author: Alexander Mejia Tovar (A01803181)
+
 using UnityEngine;
 
 public class MueveGoomba : MonoBehaviour
@@ -8,7 +10,8 @@ public class MueveGoomba : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private EscuchaColisionesGoomba escuchaColisionesGoomba;
     private float displacement = -3f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Initializes rigidbody, sprite renderer, and collision listener components.
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,7 +19,7 @@ public class MueveGoomba : MonoBehaviour
         escuchaColisionesGoomba = GetComponentInChildren<EscuchaColisionesGoomba>();
     }
 
-    // Update is called once per frame
+    // Updates Goomba movement, sprite flipping, and direction reversal on wall collision.
     void Update()
     {
         if (step_counter < 180)

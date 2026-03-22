@@ -1,0 +1,27 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=fbf0fd576432a0844ad2b3d6b4718fd8&amp;type=3#MainMenu"/>
+    <ui:VisualElement name="BoxContainer" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 50px; margin-right: 50px; margin-bottom: 50px; margin-left: 50px;">
+        <ui:Label text="Tarea Unity" name="Title" class="title"/>
+        <ui:VisualElement name="ContentContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.29); border-bottom-left-radius: 50px; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; align-content: auto; justify-content: space-around; padding-left: 0; padding-right: 0; margin-right: 150px; margin-left: 150px; margin-top: 50px; margin-bottom: 50px;">
+            <ui:Button text="Jugar" name="PlayButton" class="button" style="display: flex;"/>
+            <ui:Button text="Ayuda" name="HelpButton" class="button" style="display: flex;"/>
+            <ui:Button text="Créditos" name="CreditsButton" class="button" style="display: flex;"/>
+            <ui:VisualElement name="HelpContainer" style="flex-grow: 1; align-self: auto; justify-content: center; display: none;">
+                <ui:Button text="" name="ExitHelp" class="exit_button" style="align-self: flex-end; margin-right: 40px;"/>
+                <ui:Label text="What is Lorem Ipsum?" name="HelpHeader" class="title header"/>
+                <ui:Label text="Lorem ipsum is simply dummy text of the&#10;printing and typesetting industry. Lorem ipsum&#10;has been the industry&apos;s standard dummy text&#10;ever since the 1500s, when an unknown printer&#10;took a gallery of type and scrambled it to make a&#10;type specimen book. It has survived not only&#10;five centuries, but also the leap into electronic&#10;typesetting, remaining essentially unchanged.&#10;It was popularized in the 1960s with the release of&#10;Letraset sheets containing Lorem Ipsum&#10;passages..." name="HelpBody" class="body"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="CreditsContainer" style="flex-grow: 1; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; display: none;">
+                <ui:Button text="" name="ExitCredits" class="exit_button" style="align-self: flex-end; margin-right: 40px;"/>
+                <ui:Label text="Créditos" name="CreditsContainer" class="header"/>
+                <ui:ScrollView name="CreditsScroll" style="overflow: hidden;">
+                    <ui:Label text="Lorem ipsum dolor sit amet, consectetuer&#10;adipiscing elit. Aenean commodo ligula eget&#10;dolor. Aenean massa. Cum sociis natoque penatibus&#10;et magnis dis parturient montes, nascetur ridiculus&#10;mus. Donec quam felis, ultricies nec, pellentesque eu,&#10;pretium quis, sem. Nulla consequat massa quis enim.&#10;Donec pede justo, fringilla vel, aliquet nec, vulputate&#10;eget, arcu. In enim justo, rhoncus ut, imperdiet a,&#10;venenatis vitae, justo. Nullam dictum felis eu pede&#10;mollis pretium. Integer tincidunt. Cras dapibus. Vivamus&#10;elementum semper nisi. Aenean vulputate eleifend tellus.&#10;Aenean leo ligula, porttitor eu, consequat vitae, eleifend&#10;ac, enim. Aliquam lorem ante, dapibus in, viverra quis,&#10;feugiat a, tellus. Phasellus viverra nulla ut metus varius&#10;laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies&#10;nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam&#10;eget dui. Etiam rhoncus. Maecenas tempus, tellus eget&#10;condimentum rhoncus, sem quam semper libero, sit amet&#10;adipiscing sem neque sed ipsum. Nam quam nunc, blandit&#10;vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio&#10;et ante tincidunt tempus. Donec vitae sapien ut libero&#10;venenatis faucibus. Nullam quis ante. Etiam sit amet orci&#10;eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris&#10;sit amet nibh. Donec sodales sagittis magna. Sed consequat,&#10;leo eget bibendum sodales, augue velit cursus nunc," name="CreditsBody" class="body"/>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="InfoContainer" style="flex-grow: 1; align-items: center; justify-content: space-between; align-self: stretch; align-content: auto; flex-direction: row;">
+            <ui:Button text="" name="ButtonExit" class="exit_button"/>
+            <ui:Label text="Alexander Mejia Tovar (A01803181)" name="Owner" style="font-size: 30px; -unity-font-style: bold-and-italic; color: rgb(255, 255, 255); -unity-text-align: upper-right;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

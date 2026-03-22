@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GetBackButton.uss?fileID=7433441132597879392&amp;guid=fe625e9440b828c46abe5797eed10cea&amp;type=3#GetBackButton"/>
+    <ui:Button text="Go Back" name="GetBackButton" class="get_back_button" style="margin-right: 40px;"/>
+</ui:UXML>

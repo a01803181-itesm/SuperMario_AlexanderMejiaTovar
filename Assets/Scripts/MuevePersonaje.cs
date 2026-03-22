@@ -1,5 +1,6 @@
+// Author: Alexander Mejia Tovar (A01803181)
+
 using UnityEngine;
-using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 
 public class MuevePersonaje : MonoBehaviour
@@ -13,13 +14,15 @@ public class MuevePersonaje : MonoBehaviour
     private EscuchaColisiones escuchaColisiones;
 
     private float velocity = 5f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Initializes rigidbody and collision listener components.
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         escuchaColisiones = GetComponentInChildren<EscuchaColisiones>();
     }
 
+    // Enables input actions and subscribes to the jump event.
     void OnEnable()
     {
         moveAction.Enable();
@@ -27,18 +30,20 @@ public class MuevePersonaje : MonoBehaviour
         jumpAction.performed += jump;
     }
 
+    // Applies upward velocity for jumping if the character is not already jumping.
     public void jump(InputAction.CallbackContext context)
     {
         if (!escuchaColisiones.isJumping)
             rigidBody.linearVelocityY = velocity;
     }
 
+    // Disables the jump input action.
     void OnDisable()
     {
         jumpAction.Disable();
     }
 
-    // Update is called once per frame
+    // Updates horizontal velocity based on movement input.
     void Update()
     {
         Vector2 movement = moveAction.ReadValue<Vector2>();

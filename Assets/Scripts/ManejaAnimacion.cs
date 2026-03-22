@@ -1,5 +1,6 @@
+// Author: Alexander Mejia Tovar (A01803181)
+
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class ManejaAnimacion : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class ManejaAnimacion : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidBody2D;
     private EscuchaColisiones escuchaColisiones;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Initializes animator, sprite renderer, rigidbody, and collision listener components.
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -16,7 +17,7 @@ public class ManejaAnimacion : MonoBehaviour
         escuchaColisiones = GetComponentInChildren<EscuchaColisiones>();
     }
 
-    // Update is called once per frame
+    // Updates sprite flipping and animator states based on horizontal velocity and jumping status.
     void Update()
     {
         spriteRenderer.flipX = rigidBody2D.linearVelocityX < -1;
